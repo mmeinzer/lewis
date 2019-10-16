@@ -18,6 +18,7 @@ defmodule LewisWeb.Router do
 
     get "/", PageController, :index
     get "/paid", PaidController, :index
+    get "/paid/:bill", PaidController, :show
   end
 
   # Other scopes may use custom stacks.
